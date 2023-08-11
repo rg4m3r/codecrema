@@ -6,15 +6,19 @@ import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
-
+import logo from '../Img/mug-hot-solid.png';
+import '../App.css';
 function Header(props) {
   const { sections, title } = props;
 
   return (
+    
     <React.Fragment>
+      
       <Toolbar sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Button size="small">Unete</Button>
-        <Typography
+      <IconButton>
+          <img src={logo} alt="Logo" width="50" height="50" />
+        </IconButton>        <Typography
           component="h2"
           variant="h5"
           color="inherit"
@@ -22,7 +26,7 @@ function Header(props) {
           noWrap
           sx={{ flex: 1 }}
         >
-          {title}
+          <div className="HeadTitle">{title}</div>
         </Typography>
         <IconButton>
           <SearchIcon />

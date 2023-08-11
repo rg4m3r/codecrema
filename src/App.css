@@ -1,7 +1,21 @@
 .App {
   text-align: center;
 }
-
+.HeadTitle{
+  font-family: Farmhouse;
+  font-size: 3rem;
+  color: #e6e7e9;
+}
+@font-face {
+  font-family: Farmhouse;
+  src: url(./Farmhouse.otf);
+}
+.logo{
+  width: 10vmin;
+  height: 10vmin;
+  position: absolute;
+  z-index: 10;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -28,11 +42,3 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

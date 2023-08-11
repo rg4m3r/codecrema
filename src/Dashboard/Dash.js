@@ -12,7 +12,7 @@ import FeaturedPost from './FeaturedPost';
 import Main from './Main';
 import Sidebar from './Sidebar';
 import Footer from './Footer';
-import post1 from './blog-post.1.md';
+import post1 from './blogpost1.txt';
 import post2 from './blog-post.2.md';
 import post3 from './blog-post.3.md';
 import { red,blue} from '@mui/material/colors';
@@ -23,10 +23,10 @@ const sections = [
 ];
 
 const mainFeaturedPost = {
-  title: 'Unete a nuestro equipo!',
+  title: 'La mejor escuela de programación de México!',
   description:
     "Somos una empresa dedicada a la enseñanza de programación, con el objetivo de formar a los mejores programadores del país.",
-  image: 'https://source.unsplash.com/random?coding',
+  image: 'https://source.unsplash.com/random?code',
   imageText: 'main image description',
   linkText: '',
 };
@@ -37,7 +37,7 @@ const featuredPosts = [
     date: '11 de Agosto, 2023',
     description:
       'Diseño de aplicaciones web con React, el framework más popular del momento!',
-    image: 'https://source.unsplash.com/random?Javascript',
+    image: 'https://source.unsplash.com/random?Website',
     imageLabel: 'Image Text',
   },
   {
@@ -57,8 +57,8 @@ const sidebar = {
   description:
     'Somos una empresa dedicada a la enseñanza de programación, con el objetivo de formar a los mejores programadores del país.',
   archives: [
-    { title: 'March 2020', url: '#' },
-    { title: 'February 2020', url: '#' },
+    { title: 'Agosto 2023', url: '#' },
+    { title: 'Septiembre 2023', url: '#' },
 
   ],
   social: [
@@ -73,12 +73,11 @@ const theme = createTheme({
         mode: 'dark',
 
       primary: {
-        main: red[300],
+        main: blue[300],
 
       },
       secondary:{
-        main: '#E0C2FF',
-        light: '#F5EBFF',
+        main: blue[300],
       },
     },
   });
