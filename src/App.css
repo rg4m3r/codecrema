@@ -1,30 +1,45 @@
 .App {
   text-align: center;
+  
 }
-.HeadTitle{
+
+.HeaderContainer {
+  display: flex;
+  
+  
+}
+.back{
+  background-color: #FDFDFD;
+}
+.HeadTitle {
   font-family: Farmhouse;
   font-size: 2rem;
   color: #2c2929;
   text-align: center;
-  margin:0;
   justify-content: center;
+  
 }
-.signers{
+.signers {
+  font-size: 10rem;
   width: 50rem;
-  margin-left: -1;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
+}
+.signers sx{
+  font-size: 3rem;
 
 }
-.customTitle{
+.customTitle {
   display: flex;
-  height: 9rem;
+  height: 10rem;
   margin-bottom: 0;
 }
 @font-face {
   font-family: Farmhouse;
   src: url(./Farmhouse.otf);
 }
-.welcomeMessage{
+.welcomeMessage {
   margin-top: 15rem;
   text-align: left;
   flex-direction: column;
@@ -34,7 +49,7 @@
   color: rgb(31, 31, 31);
   padding: 5rem;
 }
-.welcomeMessage h1{
+.welcomeMessage h1 {
   font-family: Helvetica;
   font-weight: bolder;
   font-size: 2rem;
@@ -42,110 +57,135 @@
   width: 40rem;
   text-align: justify;
 }
-.welcomeMessage h2{
+.welcomeMessage h2 {
   font-family: Helvetica;
   font-size: 1.5rem;
   font-weight: lighter;
   color: #5e5c5c;
   width: 40rem;
   text-align: left;
-  
 }
-.welcomeMessage span{
+body{
+  display: flex;
+}
+.welcomeMessage span {
   font-family: Helvetica;
   font-size: 2rem;
-  color: #5879e3;
+  color: #6431e6;
   width: 50rem;
-
 }
-.contain{
+.contain {
   background-color: #282c34;
   width: 100%;
 }
-.mainSplash{
+.mainSplash {
   width: 50rem;
   height: auto;
   flex-direction: column;
 }
-.main{
+.main {
   display: flex;
-  background-color: #FCFCFC;
+  background-color: #FDFDFD;
   height: 100vh;
   width: 100%;
-  margin-top: -3rem;
   justify-content: center;
   align-items: center;
 }
-.mainLogo{
-  margin-top: -5rem;
-  filter:saturate(70%)
+.topLateralIcons{
+  margin: 0;
+  height:2rem;
+  width:10rem;
 }
-.mainContainer{
+.topLogo{
+  width:3rem;
+}
+.mainLogo {
+  display: flex;
+  width: 30rem; /* Adjust this value according to your preference */
+  margin-top: -5rem;
+}
+.mainContainer {
   align-items: center;
   text-align: center;
-  flex-direction: column-reverse;
+  flex-direction: column;
   display: flex;
   justify-content: center;
   color: rgb(31, 31, 31);
-  width:100%;
+  width: 99vmax;
+
   padding: 5rem;
-  margin-top: -3rem;
+  margin-top: 3rem;
+  background-color: #FDFDFD;
 }
-@media only screen and (max-width: 100px) {
-
-  .signers{
-    width: 40rem;
-    margin-left: -1;
-  }
-  .foot{
-    margin-top: 30rem;
-  }
-  .mainLogo{
-    margin-top: 100rem;
-  }
-  .welcomeMessage h1{
-    width: 1rem;
-  }
+.leftIcon{
 }
-@media only screen and (min-width: 100px) and (max-width: 2000px) {
+/* Mobile devices */
+@media only screen and (max-width: 800px) {
+  .welcomeMessage h1,.welcomeMessage span {
+    font-size: 3.5rem;
+    width: 80%
+  }
+  .welcomeMessage h2{
+    font-size: 2rem;
+    width: 80%
+  }
+  .main, .welcomeMessage h1, .welcomeMessage h2, .welcomeMessage span{
+  }
+  .leftIcon{
+    margin-left: 10rem;
+    width:80;
+  }
+  
   .mainContainer {
-    flex-direction: column;
-    margin-top: -3rem;
+    align-items: center;
   }
-  .signers{
-    width: 50rem;
-    margin-left: -1;
+  .HeadTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+    font-size: 5rem;
+    width: auto;
+  }
+  .signers {
+    width: 65rem;
+    height: 10rem;
+    font-size:30rem ;
+    margin-left: auto;
+    margin-right: auto;
   }
   .foot{
-    margin-top: 30rem;
+    margin-bottom: -20rem;
   }
-  .mainLogo{
+  .mainLogo {
+    width: 50rem; /* You may adjust this value */
+    margin-bottom:-30rem;
   }
 }
-
-@media only screen and (min-width: 2001px) {
+.foot{
+}
+/* Large screens */
+@media only screen and (min-width: 801px) {
   .mainContainer {
     flex-direction: row;
-
   }
-  .signers{
+  .signers {
     width: 40rem;
-    margin-left: -1;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .welcomeMessage{
-    margin-top: -5rem
+  .welcomeMessage {
+    margin-top: -5rem;
   }
 }
-.imageContainer{
+.imageContainer {
   width: 50rem;
   height: auto;
   flex-direction: row;
 }
-
-.Logo{
+.Logo {
   margin: 1rem;
   width: 5rem;
   height: 5rem;
   z-index: 10;
 }
-

@@ -63,7 +63,7 @@ const sidebar = {
     { name: 'Twitter', icon: TwitterIcon }
   ],
 };
-const violetBase = '#3e77f2';
+const violetBase = '#6431e6';
 const violetMain = alpha(violetBase, 0.7);
 // TODO remove, this demo shouldn't need to reset the theme.
 const theme = createTheme({
@@ -78,20 +78,18 @@ const theme = createTheme({
 });
 export default function mainScreen() {
   return (
-    <div>
-        <ThemeProvider theme={theme}>
+    <ThemeProvider theme={theme}>
       <CssBaseline />
       <Header title="code crema"/>
-        <div className='main'>
-        <div className='mainContainer'>
+      <div className='mainContainer'>
           <div className="welcomeMessage">
             <h1>Master Web & Game Development in 3 Months taught by a <span>Pro </span>. </h1>
             <h2>Unity & React 3 Month Courses, available now.</h2>
             <Box m={2} textAlign={"center"} alignItems={"left"} sx={{ '& button': { m: 2 } }}>
-            <Button className="signers" variant="outlined" color="violet" size="large" disableElevation>
+            <Button  sx={{fontSize:"4vmin"}} className="signers" variant="outlined" color="violet" size="large" >
               Sign Up
             </Button>
-            <Button className="signers" variant="contained" color="violet" size="large" disableElevation>
+            <Button  sx={{fontSize:"2rem"}} className="signers" variant="contained" color="violet" size="large" >
               Sign Up
             </Button>
             
@@ -100,18 +98,15 @@ export default function mainScreen() {
           </div>
           
           <div className='imageContainer'>
-          <img src={MyIcon} className='mainLogo' style={{width:"30rem"}}/>
           </div>
+          <img src={MyIcon} className='mainLogo' />
 
         </div>
-        
-        </div>
 
-      <Footer mt={50}
+      <Footer className="foot" bc={"violet"} mt={50}
         title=""
         description="CodeCrema "
       />
     </ThemeProvider>
-    </div>
   );
 }

@@ -9,7 +9,7 @@ import Link from '@mui/material/Link';
 import logo from '../Img/mug-hot-solid.png';
 import '../App.css';
 import { createTheme, alpha, getContrastRatio,  ThemeProvider } from '@mui/material/styles';
-const green = '#3e77f2';
+const green = '#6431e6';
 const black = '#32353f'
 const blackMain = alpha(black, .7);
 
@@ -35,16 +35,16 @@ function Header(props) {
 
   return (
     
-    <React.Fragment >
+    <React.Fragment className="HeaderContainer">
       <ThemeProvider theme={theme}>
               
       <Toolbar sx={{ borderBottom: 1, borderColor: 'divider', justifyContent:'center' }}>
-        < IconButton sx={{}}>
-          <img src={logo} alt="Logo" width="40" height="40" />
+        < IconButton className="leftIcon"  sx={{size:"large"}}>
+          <img src={logo} alt="Logo" className="topLogo"   />
         </IconButton>        
         <Typography
-          component="h3"
-          variant="h4"
+          component="h1"
+          variant="h1"
           color="black"
           align="center"
           sx={{ marginLeft:"10rem", marginRight:"10rem" }}
@@ -52,7 +52,7 @@ function Header(props) {
           <div className="HeadTitle">{title}</div>
         </Typography>
 
-        <Button sx={{ }} variant="contained" color="violet" size="large" disableElevation>
+        <Button className="topLateralIcons" sx={{ fontSize:".8rem"}} variant="contained" color="violet" type={'info'} size="large" >
           Sign Up
         </Button>
       </Toolbar>
