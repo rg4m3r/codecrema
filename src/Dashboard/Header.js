@@ -13,7 +13,7 @@ function Header(props) {
 
   return (
     
-    <React.Fragment>
+    <React.Fragment >
       
       <Toolbar sx={{ borderBottom: 1, borderColor: 'divider' }}>
       <IconButton>
@@ -28,11 +28,9 @@ function Header(props) {
         >
           <div className="HeadTitle">{title}</div>
         </Typography>
-        <IconButton>
-          <SearchIcon />
-        </IconButton>
+
         <Button variant="outlined" size="small">
-          Sign up
+          Inscribirse
         </Button>
       </Toolbar>
       <Toolbar

@@ -1,11 +1,11 @@
-import Dash from './Dashboard/Dash'
+import Blog from './Dashboard/Blog'
+import MainScreen from './Home/Main';
 
 const App = () => {
 
   return (
-    <div>
-      <Dash />
-    </div>
+    <MainScreen />
+
   );
 }
 export default App;

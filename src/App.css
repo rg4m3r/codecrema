@@ -4,41 +4,130 @@
 .HeadTitle{
   font-family: Farmhouse;
   font-size: 3rem;
-  color: #e6e7e9;
+  color: #2c2929;
+  text-align: center;
+  margin:0;
+  margin-left: 2rem;
+  justify-content: center;
+}
+.signers{
+  width: 30rem;
+  margin-left: -1;
+  text-align: center;
+
+}
+.customTitle{
+  display: flex;
+  height: 9rem;
+  margin-bottom: 0;
 }
 @font-face {
   font-family: Farmhouse;
   src: url(./Farmhouse.otf);
 }
-.logo{
-  width: 10vmin;
-  height: 10vmin;
-  position: absolute;
-  z-index: 10;
+.welcomeMessage{
+  text-align: left;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(31, 31, 31);
+  padding: 5rem;
 }
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.welcomeMessage h1{
+  font-family: Helvetica;
+  font-size: 4rem;
+  color: #32353f;
+  width: 30rem;
+  
 }
+.welcomeMessage h2{
+  font-family: Helvetica;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  color: #5e5c5c;
+  width: 40rem;
+}
+.welcomeMessage span{
+  font-family: Helvetica;
+  font-size: 4rem;
+  color: #3e77f2;
+  width: 10rem;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+}
+.contain{
+  background-color: #282c34;
+  width: 100%;
+}
+.mainSplash{
+  width: 50rem;
+  height: auto;
+  flex-direction: column;
+}
+.main{
+  display: flex;
+  background-color: #FCFCFC;
+  width: 100%;
+  height: 100vh;
+  margin-top: -3rem;
+  justify-content: center;
+  align-items: center;
+}
+.mainContainer{
+  align-items: center;
+  text-align: center;
+  flex-direction: column-reverse;
+  display: flex;
+  justify-content: center;
+  color: rgb(31, 31, 31);
+  width:100%;
+  padding: 5rem;
+  margin-top: -3rem;
+}
+@media only screen and (max-width: 480px) {
+  .mainContainer {
+    flex-direction: column;
+
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 1600px) {
+  .mainContainer {
+    flex-direction: column;
+
+  }
+  .signers{
+    width: 40rem;
+    margin-left: -1;
+  }
+  .foot{
+    margin-top: 30rem;
+  }
+  .welcomeMessage{
+    margin-top: 50rem;
+
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media only screen and (min-width: 1601px) {
+  .mainContainer {
+    flex-direction: row;
+
+  }
+  .signers{
+    width: 40rem;
+    margin-left: -1;
+  }
+}
+.imageContainer{
+  width: 50rem;
+  height: auto;
+  flex-direction: row;
 }
 
-.App-link {
-  color: #61dafb;
+.Logo{
+  margin: 1rem;
+  width: 5rem;
+  height: 5rem;
+  z-index: 10;
 }
 

@@ -88,7 +88,7 @@ export default function Blog() {
       <Container maxWidth="lg">
       <Header title="Code Crema" sections={sections} />
         <main>
-          <MainFeaturedPost post={mainFeaturedPost} />
+          <MainFeaturedPost post={mainFeaturedPost} style={{width:"100%"}} />
           <Grid container spacing={4}>
             {featuredPosts.map((post) => (
               <FeaturedPost key={post.title} post={post} />
