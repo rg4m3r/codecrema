@@ -13,7 +13,7 @@ import CustomTitle from './CustomTitle';
 import '../App.css';
 import { Button } from '@mui/material';
 import Box from '@mui/material/Box';
-import MyIcon  from '../Img/logo.svg';
+import MyIcon  from '../Img/newIcon.png';
 
 const sections = [
   { title: 'Technology', url: '#' },
@@ -85,9 +85,9 @@ export default function mainScreen() {
         <div className='main'>
         <div className='mainContainer'>
           <div className="welcomeMessage">
-            <h1>Turn your ideas into a <span>success.</span></h1>
-            <h2>Webbee will make your product look modern and professional while saving you precious time.</h2>
-            <Box m={2} textAlign={"center"} alignItems={"center"} sx={{ '& button': { m: 2 } }}>
+            <h1>Master Web & Game Development in 3 Months taught by a <span>Pro </span>. </h1>
+            <h2>Unity & React 3 Month Courses, available now.</h2>
+            <Box m={2} textAlign={"center"} alignItems={"left"} sx={{ '& button': { m: 2 } }}>
             <Button className="signers" variant="outlined" color="violet" size="large" disableElevation>
               Sign Up
             </Button>
@@ -100,7 +100,7 @@ export default function mainScreen() {
           </div>
           
           <div className='imageContainer'>
-          <img src={MyIcon} />
+          <img src={MyIcon} className='mainLogo' style={{width:"30rem"}}/>
           </div>
 
         </div>
